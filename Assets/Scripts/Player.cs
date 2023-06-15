@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
 
     private string RUN = "Running";
 
-    private bool IsGrounded = true;
+    private bool IsGrounded;
     private string GROUND_TAG = "Ground";
 
     private string ATTACK = "Attacking";
