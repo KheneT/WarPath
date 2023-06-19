@@ -118,7 +118,7 @@ public class Enemy : MonoBehaviour
 
     void PlayerAttack()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetButtonDown("Attack")) //Input manager axe
         {
             anim.SetTrigger("Attack");
         }
