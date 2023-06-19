@@ -19,12 +19,13 @@ public class Enemy : MonoBehaviour
 
     private SpriteRenderer sr;
 
-    private string RUN = "Running";
+    private string RUN = "Run";
 
+    private string GROUNDED = "Grounded";
     private bool IsGrounded;
     private string GROUND_TAG = "Ground";
-
-    private string ATTACK = "Attacking";
+    private string JUMP = "Jump";
+    private string ATTACK = "Attack";
 
     private bool Attacking = false;
 
@@ -75,12 +76,12 @@ public class Enemy : MonoBehaviour
         if (movementX > 0)
         {
             anim.SetBool(RUN, true);
-            sr.flipX = false;
+            sr.flipX = true;
         }
         else if (movementX < 0)
         {
             anim.SetBool(RUN, true);
-            sr.flipX = true;
+            sr.flipX = false;
         }
         else
         {
@@ -92,9 +93,11 @@ public class Enemy : MonoBehaviour
 
     void PlayerJump()
     {
-        if (Input.GetButtonDown("Jump") && IsGrounded)
+        if (Input.GetButtonDown("Jump_2") && IsGrounded)
         {
             IsGrounded = false;
+            anim.SetBool(GROUNDED, false);
+            anim.SetTrigger(JUMP);
             myBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
 
         }
@@ -108,6 +111,7 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.CompareTag(GROUND_TAG))
         {
             IsGrounded = true;
+            anim.SetBool(GROUNDED, true);
         }
     }
 
@@ -116,7 +120,7 @@ public class Enemy : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            anim.SetTrigger("Active");
+            anim.SetTrigger("Attack");
         }
     }
 
