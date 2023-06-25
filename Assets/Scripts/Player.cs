@@ -28,47 +28,47 @@ public class Player : MonoBehaviour
 
     private bool Attacking = false;
 
+    private string PLAYER_TAG = "Player_1";
 
-    //Awake is used to get the components from unity, and is executed once the game is initiated
+    public double Attack { get; set; } = 0.5;
+
+    public double Health { get; set; } = 3;
+
+    [SerializeField]
+    private GameObject attackPoint;
+
+    [SerializeField]
+    private float Radius;
+
+    [SerializeField]
+    private LayerMask Enemies;
+
     private void Awake()
     {
-        myBody = GetComponent<Rigidbody2D>(); // Instance the components added to the player to animate and move the body of the player.
+        myBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
     }
 
-    // Start is called before the first frame updat
     void Start()
     {
 
-
     }
 
-    // Update is called once per frame
     void Update()
     {
         PlayerMoveKeyboard();
         AnimatePlayer();
-        PlayerJump(); 
-        PlayerAttack();
-
+        PlayerJump();
+        PlayerAttackAnimation();
 
     }
-
 
     void PlayerMoveKeyboard()
-
-    { // Get the position of the player, from -1 to 1.
+    {
         movementX = Input.GetAxisRaw("Horizontal");
-
-        /* Change the position of the player multiplying the Vector3 which has 3 axis, 
-            we only modify the first in order to move in the x axis, then we multiply with the moveForce
-            and the deltaTime, which is a component that allow us to do a movement equals to the player frames quantity*/
         transform.position += new Vector3(movementX, 0f, 0f) * moveForce * Time.deltaTime;
     }
-
-    /* In order to make the player move we set the animation to true, and if in case the player is moving to the left
-    we flip the asset of the player*/
 
     void AnimatePlayer()
     {
@@ -88,23 +88,17 @@ public class Player : MonoBehaviour
         }
     }
 
-    //
-
     void PlayerJump()
     {
         if (Input.GetButtonDown("Jump") && IsGrounded)
         {
             IsGrounded = false;
             myBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
-
         }
     }
 
-    // This function allow us to detect collisions between two objetcs
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // If our object collision with our ground we set the value to true, to be able to use the JumpAnimation
         if (collision.gameObject.CompareTag(GROUND_TAG))
         {
             IsGrounded = true;
@@ -112,7 +106,7 @@ public class Player : MonoBehaviour
     }
 
 
-    void PlayerAttack()
+    void PlayerAttackAnimation()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -120,4 +114,30 @@ public class Player : MonoBehaviour
         }
     }
 
+    void AttackAction()
+    {
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.transform.position, Radius, Enemies);
+
+        foreach (Collider2D enemyGameObject in hitEnemies)
+        {
+            Debug.Log("Hit enemy");
+            Enemy otherEnemy = enemyGameObject.GetComponent<Enemy>();
+            if (otherEnemy != null)
+            {
+                if (otherEnemy.Health > this.Attack)
+                {
+                    otherEnemy.Health -= this.Attack;
+                }
+                else
+                {
+                    Destroy(otherEnemy.gameObject);
+                }
+            }
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(attackPoint.transform.position, Radius);
+    }
 }
