@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private Rigidbody2D myBody;
 
-    private Animator anim;
+    private Animator anim { get; set; }
 
     private SpriteRenderer sr;
 
@@ -125,12 +125,20 @@ public class Player : MonoBehaviour
             if (otherEnemy != null)
             {
                 if (otherEnemy.Health > this.Attack)
+
                 {
+
                     otherEnemy.Health -= this.Attack;
+                    otherEnemy.anim.SetTrigger("Hurt");
+
                 }
                 else
                 {
-                    Destroy(otherEnemy.gameObject);
+                    otherEnemy.anim.SetTrigger("Death");
+                    otherEnemy.Attack = 0;
+                    otherEnemy.moveForce = 0;
+                    otherEnemy.jumpForce = 0;
+                    otherEnemy.anim = null;
                 }
             }
         }

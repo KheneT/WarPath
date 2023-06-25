@@ -4,18 +4,16 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField]
-    private float moveForce = 10f;
+    public float moveForce { get; set; } = 10f;
 
-    [SerializeField]
-    private float jumpForce = 11f;
+    public float jumpForce { get; set; } = 11f;
 
     private float movementX;
 
     [SerializeField]
     private Rigidbody2D myBody;
 
-    private Animator anim;
+    public Animator anim { get; set; }
 
     private SpriteRenderer sr;
 
@@ -74,36 +72,47 @@ public class Enemy : MonoBehaviour
 
     void AnimatePlayer()
     {
-        if (movementX > 0)
+        if (this.anim != null)
         {
-            anim.SetBool(RUN, true);
-            sr.flipX = true;
-        }
-        else if (movementX < 0)
-        {
-            anim.SetBool(RUN, true);
-            sr.flipX = false;
-        }
-        else
-        {
-            anim.SetBool(RUN, false);
+
+
+            if (movementX > 0)
+            {
+                anim.SetBool(RUN, true);
+                sr.flipX = true;
+            }
+            else if (movementX < 0)
+            {
+                anim.SetBool(RUN, true);
+                sr.flipX = false;
+            }
+            else
+            {
+                anim.SetBool(RUN, false);
+            }
+
         }
     }
 
     void PlayerJump()
     {
-        if (Input.GetButtonDown("Jump_2") && IsGrounded)
+        if (this.anim != null)
         {
-            IsGrounded = false;
-            anim.SetBool(GROUNDED, false);
-            anim.SetTrigger(JUMP);
-            myBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            if (Input.GetButtonDown("Jump_2") && IsGrounded)
+            {
+                IsGrounded = false;
+                anim.SetBool(GROUNDED, false);
+                anim.SetTrigger(JUMP);
+                myBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            }
+
         }
+  
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag(GROUND_TAG))
+        if (collision.gameObject.CompareTag(GROUND_TAG) && this.anim != null)
         {
             IsGrounded = true;
             anim.SetBool(GROUNDED, true);
@@ -113,7 +122,7 @@ public class Enemy : MonoBehaviour
 
     void PlayerAttack()
     {
-        if (Input.GetButtonDown("Attack")) //Input manager axe
+        if (Input.GetButtonDown("Attack") && this.anim!=null) //Input manager axe
         {
             anim.SetTrigger("Attack");
         }
