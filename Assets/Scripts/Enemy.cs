@@ -151,6 +151,15 @@ public class Enemy : MonoBehaviour
         }
     }
 
+
+    public void playerDeath() {
+
+        this.anim.SetTrigger("Death");
+        this.Attack = 0;
+        this.moveForce = 0;
+        this.jumpForce = 0;
+        this.anim = null;
+    }
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(attackPoint.transform.position, Radius);

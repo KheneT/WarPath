@@ -72,6 +72,9 @@ public class Player : MonoBehaviour
 
     void AnimatePlayer()
     {
+
+        if (this.anim != null) { 
+
         if (movementX > 0)
         {
             anim.SetBool(RUN, true);
@@ -86,14 +89,19 @@ public class Player : MonoBehaviour
         {
             anim.SetBool(RUN, false);
         }
+
+        }
     }
 
     void PlayerJump()
     {
-        if (Input.GetButtonDown("Jump") && IsGrounded)
+        if (this.anim != null)
         {
-            IsGrounded = false;
-            myBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            if (Input.GetButtonDown("Jump") && IsGrounded)
+            {
+                IsGrounded = false;
+                myBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            }
         }
     }
 
@@ -108,9 +116,12 @@ public class Player : MonoBehaviour
 
     void PlayerAttackAnimation()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (this.anim != null)
         {
-            anim.SetTrigger("Active");
+            if (Input.GetMouseButtonDown(0))
+            {
+                anim.SetTrigger("Active");
+            }
         }
     }
 
@@ -122,7 +133,7 @@ public class Player : MonoBehaviour
         {
             Debug.Log("Hit enemy");
             Enemy otherEnemy = enemyGameObject.GetComponent<Enemy>();
-            if (otherEnemy != null)
+            if (otherEnemy != null && otherEnemy.anim != null)
             {
                 if (otherEnemy.Health > this.Attack)
 
@@ -134,14 +145,24 @@ public class Player : MonoBehaviour
                 }
                 else
                 {
-                    otherEnemy.anim.SetTrigger("Death");
-                    otherEnemy.Attack = 0;
-                    otherEnemy.moveForce = 0;
-                    otherEnemy.jumpForce = 0;
-                    otherEnemy.anim = null;
+                    otherEnemy.playerDeath();
+                    stopMoving();
+                    
+                        
                 }
             }
         }
+    }
+
+
+    public void stopMoving()
+    {
+        this.Attack = 0;
+        this.moveForce = 0;
+        this.jumpForce = 0;
+        this.anim = null;
+
+
     }
 
     private void OnDrawGizmos()
