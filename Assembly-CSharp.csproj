@@ -56,7 +56,7 @@
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\Character.cs" />
+    <Compile Include="Assets\Scripts\ChangeScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
