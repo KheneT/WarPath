@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Threading.Tasks;
 
 public class Enemy : MonoBehaviour
 {
@@ -129,7 +130,7 @@ public class Enemy : MonoBehaviour
     }
 
 
-    void AttackAction()
+    async void AttackAction()
     {
         Collider2D[] Enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, Radius, Enemies);
 
@@ -137,14 +138,17 @@ public class Enemy : MonoBehaviour
         {
             Debug.Log("Hit enemy");
             Player player = enemyGameObject.GetComponent<Player>();
-            if (player != null)
+            if (player != null && player.anim != null)
             {
                 if (player.Health > this.Attack)
                 {
                     player.Health -= this.Attack;
+                    player.anim.SetTrigger("Hurt");
                 }
                 else
                 {
+                    player.playerDeath();
+                    await Task.Delay(800);
                     Destroy(player.gameObject);
                 }
             }

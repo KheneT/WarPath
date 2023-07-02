@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private Rigidbody2D myBody;
 
-    private Animator anim { get; set; }
+    public Animator anim { get; set; }
 
     private SpriteRenderer sr;
 
@@ -141,7 +141,7 @@ public class Player : MonoBehaviour
 
                     otherEnemy.Health -= this.Attack;
                     otherEnemy.anim.SetTrigger("Hurt");
-
+                        
                 }
                 else
                 {
@@ -157,12 +157,23 @@ public class Player : MonoBehaviour
 
     public void stopMoving()
     {
+
         this.Attack = 0;
         this.moveForce = 0;
         this.jumpForce = 0;
         this.anim = null;
 
 
+    }
+
+    public void playerDeath()
+    {
+
+        this.anim.SetTrigger("Death");
+        this.Attack = 0;
+        this.moveForce = 0;
+        this.jumpForce = 0;
+        this.anim = null;
     }
 
     private void OnDrawGizmos()
