@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.1/staging' branch; Version is '2021.1.7f1 (d91830b65d9b) revision 14227504'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19045.3086; Version 2009; 64bit' Language: 'es' Physical Memory: 16331 MB
+OS: 'Windows 10 Enterprise; OS build 19045.3086; Version 2009; 64bit' Language: 'es' Physical Memory: 16261 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,111 +11,205 @@ C:\Program Files\Unity\Hub\Editor\2021.1.7f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-D:/Users/Julian/Desktop/universidad/Juegos/sapos/WarPath
+D:/2023/Desktop/A.P.I/WarPath
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56248
-Successfully changed project path to: D:/Users/Julian/Desktop/universidad/Juegos/sapos/WarPath
-D:/Users/Julian/Desktop/universidad/Juegos/sapos/WarPath
+65252
+Successfully changed project path to: D:/2023/Desktop/A.P.I/WarPath
+D:/2023/Desktop/A.P.I/WarPath
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 166.52 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 127.72 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.7f1 (d91830b65d9b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Users/Julian/Desktop/universidad/Juegos/sapos/WarPath/Assets
+[Subsystems] Discovering subsystems at path D:/2023/Desktop/A.P.I/WarPath/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce MX130 (ID=0x174d)
     Vendor:   NVIDIA
-    VRAM:     12129 MB
-    Driver:   31.0.15.2849
+    VRAM:     2010 MB
+    Driver:   26.21.14.4223
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56264
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56328
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002741 seconds.
+Registered in 0.003327 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 110.25 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 140.16 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.530 seconds
+- Completed reload, in  2.002 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003578 seconds.
+Registered in 0.003152 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Users\Julian\Desktop\universidad\Juegos\sapos\WarPath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Users\Julian\Desktop\universidad\Juegos\sapos\WarPath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image D:\2023\Desktop\A.P.I\WarPath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\2023\Desktop\A.P.I\WarPath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 107.80 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 129.77 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.345 seconds
+- Completed reload, in  1.636 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3377 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 128.2 MB.
 System memory in use after: 128.3 MB.
 
 Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 3831.
-Total: 2.992900 ms (FindLiveObjects: 0.341400 ms CreateObjectMapping: 0.105100 ms MarkObjects: 2.428400 ms  DeleteObjects: 0.116800 ms)
+Total: 2.556400 ms (FindLiveObjects: 0.273000 ms CreateObjectMapping: 0.153600 ms MarkObjects: 2.021100 ms  DeleteObjects: 0.107600 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Fonts/BebasNeue-Regular.ttf
-  artifactKey: Guid(cfba82190d107744494da6c7ee091c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fonts/BebasNeue-Regular.ttf using Guid(cfba82190d107744494da6c7ee091c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e38a5b5b66a2db53ff5b9de816d5d92') in 0.155723 seconds 
+  path: Assets/Sprites/Trump
+  artifactKey: Guid(cfb1d082269aa9b4bbf4c8398274a523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Trump using Guid(cfb1d082269aa9b4bbf4c8398274a523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1727afe82cd774c7b39c7b293a95e74') in 0.013163 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003241 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Users\Julian\Desktop\universidad\Juegos\sapos\WarPath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Users\Julian\Desktop\universidad\Juegos\sapos\WarPath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.178 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.79 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3370 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 132.3 MB.
-System memory in use after: 132.5 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3893.
-Total: 2.874700 ms (FindLiveObjects: 0.357900 ms CreateObjectMapping: 0.109000 ms MarkObjects: 2.312700 ms  DeleteObjects: 0.093800 ms)
-
+Received Import Request.
+  Time since last request: 15.297709 seconds.
+  path: Assets/Sprites/Trump/TrumpAttack_2.png
+  artifactKey: Guid(5bb7137f66c88cd409bd7fd796e4aa04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Trump/TrumpAttack_2.png using Guid(5bb7137f66c88cd409bd7fd796e4aa04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3036055d9dde3a2dec43dde13cf894a2') in 0.389750 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003531 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Users\Julian\Desktop\universidad\Juegos\sapos\WarPath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Users\Julian\Desktop\universidad\Juegos\sapos\WarPath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.161 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3369 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 132.4 MB.
-System memory in use after: 132.5 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3896.
-Total: 3.854500 ms (FindLiveObjects: 0.307400 ms CreateObjectMapping: 0.097700 ms MarkObjects: 3.325900 ms  DeleteObjects: 0.121800 ms)
-
+Received Import Request.
+  Time since last request: 17.772217 seconds.
+  path: Assets/Sprites/Trump/TrumpAttack_2.png
+  artifactKey: Guid(5bb7137f66c88cd409bd7fd796e4aa04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Trump/TrumpAttack_2.png using Guid(5bb7137f66c88cd409bd7fd796e4aa04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62335242ab3cb0071e31ce1bad9ecadf') in 0.018018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.611306 seconds.
+  path: Assets/Sprites/Trump/TrumpAttack_2.png
+  artifactKey: Guid(5bb7137f66c88cd409bd7fd796e4aa04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Trump/TrumpAttack_2.png using Guid(5bb7137f66c88cd409bd7fd796e4aa04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '294a4220d9ee2e9d98a61f31cd76a625') in 0.039602 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.479513 seconds.
+  path: Assets/Sprites/Trump/TrumpWalking.png
+  artifactKey: Guid(fb2aee3311b585d4792a1c1c02dded5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Trump/TrumpWalking.png using Guid(fb2aee3311b585d4792a1c1c02dded5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '224a9f62ca503e96dbd21bc6b96eb303') in 0.030607 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.271964 seconds.
+  path: Assets/Sprites/Trump/TrumpWalking.png
+  artifactKey: Guid(fb2aee3311b585d4792a1c1c02dded5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Trump/TrumpWalking.png using Guid(fb2aee3311b585d4792a1c1c02dded5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00220e84ee6bc47f4487fdec7abb757b') in 0.018515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.139089 seconds.
+  path: Assets/Sprites/Trump/TrumpWalking.png
+  artifactKey: Guid(fb2aee3311b585d4792a1c1c02dded5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Trump/TrumpWalking.png using Guid(fb2aee3311b585d4792a1c1c02dded5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '309edc1f2f8684c753135478e13d22bd') in 0.055233 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.833539 seconds.
+  path: Assets/Sprites/ElonMusk
+  artifactKey: Guid(24735899ef44dc141b32e8320ef95e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/ElonMusk using Guid(24735899ef44dc141b32e8320ef95e7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '075fb44947107795545061a041985095') in 0.014123 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.420616 seconds.
+  path: Assets/Sprites/ElonMusk/elon_mosquito.png
+  artifactKey: Guid(0f3e51243cbdf8c439e1e43cb77c6faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/ElonMusk/elon_mosquito.png using Guid(0f3e51243cbdf8c439e1e43cb77c6faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b7f0fa89f4b94a87a32f82665a9da74') in 0.031850 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.850100 seconds.
+  path: Assets/Sprites/ElonMusk/elon_mosquito.png
+  artifactKey: Guid(0f3e51243cbdf8c439e1e43cb77c6faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/ElonMusk/elon_mosquito.png using Guid(0f3e51243cbdf8c439e1e43cb77c6faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65ef991603dd6a5937e599263079e26e') in 0.021578 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 297.967385 seconds.
+  path: Assets/Sprites/ElonMusk/elon_mosquito.png
+  artifactKey: Guid(0f3e51243cbdf8c439e1e43cb77c6faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/ElonMusk/elon_mosquito.png using Guid(0f3e51243cbdf8c439e1e43cb77c6faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '687bafe2cb648bee84cae1a1f1b37ff2') in 0.127261 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 105.849923 seconds.
+  path: Assets/Scenes/MainMenu.unity
+  artifactKey: Guid(fc93042ad6f43de4097e45a9e3501cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainMenu.unity using Guid(fc93042ad6f43de4097e45a9e3501cba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faaac3a9454c0792b543faaadf812090') in 0.012641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 145.077821 seconds.
+  path: Assets/Background/i-drew-an-animated-scene-of-medellC3ADn-colombia-v0-mhp4ym0a4cka1.png
+  artifactKey: Guid(20caaadc48fa3fb4c95cc02e600a2263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Background/i-drew-an-animated-scene-of-medellC3ADn-colombia-v0-mhp4ym0a4cka1.png using Guid(20caaadc48fa3fb4c95cc02e600a2263) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84ee6d14c510651a4aacfa1ff4c6f2f3') in 0.036577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/Sprites/Knight Files/Knight PNG/Knight_block_01.png
+  artifactKey: Guid(5cfc8e09a9a6be647958e6f33e5337d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Knight Files/Knight PNG/Knight_block_01.png using Guid(5cfc8e09a9a6be647958e6f33e5337d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd623117779f5eddf92cdb24085a45367') in 0.096394 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 573.925926 seconds.
+  path: Assets/Sprites/Trump/TrumpAttack_2 1.png
+  artifactKey: Guid(d8615718069437947a26795d73bbea60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Trump/TrumpAttack_2 1.png using Guid(d8615718069437947a26795d73bbea60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a7bee08172b8d54ca0a388c822c46ed') in 0.027951 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.282820 seconds.
+  path: Assets/Sprites/Trump/TrumpAttack_2 1.png
+  artifactKey: Guid(d8615718069437947a26795d73bbea60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Trump/TrumpAttack_2 1.png using Guid(d8615718069437947a26795d73bbea60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b969ea75d910129cfc9eea7b64d37de9') in 0.011648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.368508 seconds.
+  path: Assets/Sprites/Trump/TrumpIdle.png
+  artifactKey: Guid(99775bb97575a244ba04fd4d02d8625e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Trump/TrumpIdle.png using Guid(99775bb97575a244ba04fd4d02d8625e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c3244242ebcd9f55d3746a94bae58ff') in 0.024479 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.941726 seconds.
+  path: Assets/Sprites/Trump/TrumpIdle.png
+  artifactKey: Guid(99775bb97575a244ba04fd4d02d8625e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Trump/TrumpIdle.png using Guid(99775bb97575a244ba04fd4d02d8625e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6602d9f0dd93966032216d441316345b') in 0.017559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.820954 seconds.
+  path: Assets/Sprites/Trump/TrumpIdle.png
+  artifactKey: Guid(99775bb97575a244ba04fd4d02d8625e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Trump/TrumpIdle.png using Guid(99775bb97575a244ba04fd4d02d8625e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2be8314f95e4b8a85cffa3b7c2ec6dea') in 0.032619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.471412 seconds.
+  path: Assets/Sprites/Trump/TrumpDead.png
+  artifactKey: Guid(b0b36b59df98c2f4494c671beeb4f92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Trump/TrumpDead.png using Guid(b0b36b59df98c2f4494c671beeb4f92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a753990c323a6ed1d5cf24b5ada550d7') in 0.027872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.894479 seconds.
+  path: Assets/Sprites/Trump/TrumpDead.png
+  artifactKey: Guid(b0b36b59df98c2f4494c671beeb4f92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Trump/TrumpDead.png using Guid(b0b36b59df98c2f4494c671beeb4f92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98dd9e932623dbb9c6a4a7f27b35c37a') in 1.573489 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.306179 seconds.
+  path: Assets/Sprites/Trump/TrumpDead.png
+  artifactKey: Guid(b0b36b59df98c2f4494c671beeb4f92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Trump/TrumpDead.png using Guid(b0b36b59df98c2f4494c671beeb4f92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4e178334131b20aa1bda93654b5ed81') in 0.019949 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.973529 seconds.
+  path: Assets/Sprites/Trump/TrumpDead.png
+  artifactKey: Guid(b0b36b59df98c2f4494c671beeb4f92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Trump/TrumpDead.png using Guid(b0b36b59df98c2f4494c671beeb4f92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb76c16b425908db51e7c0b90be9048a') in 0.066309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 388.235283 seconds.
+  path: Assets/Sprites/Trump/TrumpDead.png
+  artifactKey: Guid(b0b36b59df98c2f4494c671beeb4f92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Trump/TrumpDead.png using Guid(b0b36b59df98c2f4494c671beeb4f92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24d96ab814f72872ee01b7131134c4f8') in 0.035253 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
