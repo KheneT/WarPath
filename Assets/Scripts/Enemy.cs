@@ -24,11 +24,8 @@ public class Enemy : MonoBehaviour
     private bool IsGrounded;
     private string GROUND_TAG = "Ground";
     private string JUMP = "Jump";
-    private string ATTACK = "Attack";
 
-    private bool Attacking = false;
 
-    private string PLAYER_TAG = "Player";
 
     public double Attack { get; set; } = 1;
 

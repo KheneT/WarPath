@@ -24,11 +24,8 @@ public class Player : MonoBehaviour
     private bool IsGrounded;
     private string GROUND_TAG = "Ground";
 
-    private string ATTACK = "Attacking";
 
-    private bool Attacking = false;
 
-    private string PLAYER_TAG = "Player_1";
 
     public double Attack { get; set; } = 0.5;
 
